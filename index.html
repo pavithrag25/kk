@@ -4,28 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script>
+        function myfunc()
+        {
+            document.getElementById("demo").innerHTML= "Why was the math book sad? had too many problems! 😄";
+
+        }
+    </script>
+    <style>
+        h1{
+            color: blueviolet;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* body{
+            display: block;
+            border: solid 5px;
+            margin:90px;
+            padding: 90px 250px;
+            background-color: aquamarine;
+            border-radius: 20px;
+            align-content: center;
+        } */
+        p{
+            text-align: center;
+        }
+        #btn{
+            display: block;
+            text-align: center;
+            margin: auto;
+            padding: 5px 7px;
+            color: blueviolet;
+
+        }
+        .main{
+            border: solid 2px gray;
+            background-color: aquamarine;
+            margin: auto;
+            width: 200px;
+            padding: 25px 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center; color: crimson;">CALCULATOR</h1>
-    <div style="background-color: black; border-radius: 10px; padding: 20px 20px;width: 230px;margin: 0 auto;">
-        <input type="text" placeholder="Enter numbers" style="width: 220px;height: 30px;"><br><br>
-        <button style="padding: 10px 20px;background-color:lightcoral;">1</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">2</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">3</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">%</button><br><br>
-        <button style="padding: 10px 20px;background-color:lightcoral;">4</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">5</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">6</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">+</button><br><br>
-        <button style="padding: 10px 20px;background-color:lightcoral;">7</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">8</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">9</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">_</button><br><br>
-        <button style="padding: 10px 20px;background-color:lightcoral;">0</button>
-        <button style="padding: 10px 22px;background-color:lightcoral;">*</button>
-        <button style="padding: 10px 22px;background-color:lightcoral;">/</button>
-        <button style="padding: 10px 20px;background-color:lightcoral;">=</button>
-    </div>
+    <div class="main">
+    <h1>Jokes</h1>
+    <p id="demo">Why don’t skeletons fight each other?
+        Because they don’t have the guts!
+    </p>
+    <button id="btn" type="button" onclick="myfunc()">generate jokes</button>
+</div>
 </body>
 </html>
